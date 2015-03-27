@@ -1,1 +1,5 @@
-proxy.pac
+*/proxy.pac
+*/vpnconfig.conf
+*/server.pem
+*/passfile
+*/quassel.conf
