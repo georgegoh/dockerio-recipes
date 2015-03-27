@@ -2,7 +2,7 @@
 # To build:
 #   $ sudo docker build -t <container-name> .
 # To run:
-#   $ sudo docker run -p <public-port>:3128 -d <container-name>
+#   $ sudo docker run -p <public-port>:80 -d <container-name>
 #
 
 FROM ubuntu
