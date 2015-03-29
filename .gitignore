@@ -4,3 +4,4 @@
 **/quasselcore.conf
 **/quasselCert.pem
 **/quassel-storage.sqlite
+**/passfile
