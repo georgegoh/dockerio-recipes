@@ -14,9 +14,6 @@ RUN yum -y install quassel-core openvpn
 RUN mkdir $DESTDIR
 VOLUME $DESTDIR
 
-# Set up OpenVPN
-ADD src/vpnconfig.conf /etc/openvpn/config.conf
-
 EXPOSE 4242
 
-ENTRYPOINT ["/usr/sbin/openvpn", "--config", "/etc/openvpn/config.conf", "--up", "/opt/vpn_quassel/start.sh"]
+ENTRYPOINT ["/usr/sbin/openvpn", "--config", "/opt/vpn_quassel/vpnconfig.conf", "--up", "/opt/vpn_quassel/start.sh"]
