@@ -1,6 +1,6 @@
-*/proxy.pac
-*/vpnconfig.conf
-*/server.pem
-*/quasselcore.conf
-*/quasselCert.pem
-*/quassel-storage.sqlite
+**/proxy.pac
+**/vpnconfig.conf
+**/server.pem
+**/quasselcore.conf
+**/quasselCert.pem
+**/quassel-storage.sqlite
