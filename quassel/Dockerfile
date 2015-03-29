@@ -9,11 +9,11 @@ MAINTAINER George Goh "georgegohkokleong@gmail.com"
 ENV DESTDIR /opt/vpn_quassel
 
 RUN yum -y update
-RUN yum -y install quassel-core openvpn
+RUN yum -y install quassel-core openvpn vpnc net-tools
 
 RUN mkdir $DESTDIR
 VOLUME $DESTDIR
 
 EXPOSE 4242
 
-ENTRYPOINT ["/usr/sbin/openvpn", "--config", "/opt/vpn_quassel/vpnconfig.conf", "--up", "/opt/vpn_quassel/start.sh"]
+ENTRYPOINT ["/opt/vpn_quassel/start.sh"]
