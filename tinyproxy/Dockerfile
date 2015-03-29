@@ -12,6 +12,8 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 RUN apt-get install -y tinyproxy
+RUN mkdir -p -m 775 /var/run/tinyproxy
+RUN chown nobody:nogroup /var/run/tinyproxy
 
 RUN echo "User nobody"                                             > /etc/tinyproxy.conf
 RUN echo "Group nogroup"                                          >> /etc/tinyproxy.conf
